@@ -8,14 +8,13 @@ set Feedback ON;
 set ECHO OFF;
 
 DECLARE
-    v_name VARCHAR2(50);
+    v_name CONSTANT VARCHAR2(50) := 'John Doe'; -- Constant variable
     v_age  NUMBER;
     v_initial CHAR;
-    v_salary NUMBER;
+    v_salary NUMBER NOT NULL := 50000.00; -- Initialized variable
     v_is_employee BOOLEAN; -- Note: BOOLEAN is not printing
-    v_hire_date DATE;
+    v_hire_date DATE ;
 BEGIN
-    v_name := 'John Doe';
     v_age := 30;    
     v_initial := 'J';
     v_salary := 55000.50;

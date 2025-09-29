@@ -5,7 +5,7 @@ Description: Just a demo for my beautiful students.
 
 ************************************/
 set SERVEROUTPUT ON;
-set Feedback ON;
+set Feedback OFF;
 set ECHO OFF;
 BEGIN
 DBMS_OUTPUT.PUT_LINE('Hey, this is my first script');

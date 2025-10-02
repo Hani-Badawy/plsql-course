@@ -3,6 +3,13 @@ Author: Hani Mohammed
 Date: 2025-09-25
 Description: using  built-in functions in PL/SQL.
 */
+create SEQUENCE customers_seq 
+START WITH 2000 
+INCREMENT BY 1
+minvalue 1000
+maxvalue 9999
+NOCYCLE
+NOCACHE;
 
 set SERVEROUTPUT ON;
 set Feedback ON;

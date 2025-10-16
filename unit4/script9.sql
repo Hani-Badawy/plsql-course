@@ -8,18 +8,14 @@ set SERVEROUTPUT ON;
 set Feedback ON;
 set ECHO OFF;
 DECLARE
-    Type customer IS RECORD (
-        firstname customers.firstname%TYPE,
-        lastname customers.lastname%TYPE,
-        email customers.email%TYPE
-    );
-    v_customer customer;
+    
+    v_customer customers%ROWTYPE;
 BEGIN
     
     BEGIN
         SELECT firstname, lastname, email 
-        INTO v_customer
-        from customers WHERE customer# = 2000;
+        INTO v_customer.firstname, v_customer.lastname, v_customer.email
+        from customers WHERE customer# = 5000;
         DBMS_OUTPUT.PUT_LINE(
             'Customer Name: ' || v_customer.firstname || ' ' || v_customer.lastname || 
             ', Email: ' || v_customer.email

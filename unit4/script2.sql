@@ -4,6 +4,7 @@ date: 2025-09-25
 description: A demo of %type attribute in PL/SQL.
 */
 
+
 set SERVEROUTPUT ON;        
 set Feedback ON;
 set ECHO OFF;
